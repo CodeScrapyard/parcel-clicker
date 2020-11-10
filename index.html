@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #ie_boxes_fix {
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 1000000000;
+        }
+        .ie_box {
+            background-color: saddlebrown;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH4QYQFiAKo2/SxgAABIFJREFUeNrt3UuPFFUYh/HnPVU9PT00l2aEQQSCZEQuEpKRhUYSWchKjXHh0mhc6cZv4edwYzRxaQyJmCiJIQaJMSzEIIJc5JbIbe7Tl3pdtBqCM4xOTVXNHP+/ZJZT3dVPV1fVqerTICIiIiIiIiIiIiIiIiIiIiIiIiL/il379P3dwBGgCXjhDwiMt+GDUwmXxo1gS19Wz+HItox3D2bkWMx/Xwcz7t67z/kLl3Av/CVbCgfOmPFNCnwEHIJSXyMp3g133goobqxGgIMBxY1ZCFU/AymWAkdOgSOnwJFT4MgpcOQUOHKVBHZKGBMVANIqHrQWYCiFLGdld2gO9N+lesPMr/TATj/uy7synMBUZ+nLGhmCI9u8PxanwvOqZAt24NCIs3+4Rzdb+nLqSf9vZV7QWRkqCfyXoZyPrn354ioNrDjF02lS5BQ4cgocucr2wcEMLN/dBk7/CHqF3he1IpQeOJgx0+5y694ME9NtejlGO2pJoLW2zqb1DWpJIFPofygtsAE9d747d4tjpy9z8cY4s51urnPYYEazUePAzmFefW4no1vX65z4IaUF7rnz+alLfPz1z0zMdAhmWM67wRyYnuvw5Q/TnL1yh/deeYax0c36yH5AKQdZIRhnLv7OJyfOMznbIQn540L/U8HMSIJx7fYUHx7/iZt3p7DlWHgkSgnc7vQ4/v1Vxqfb/YOrAiTB+PXmBCd/vKnbRB9QeGAz4+7kHL/cuL8sW+2jZO6cvXKHdrdX9GqtGsUHBqbnusy2u1jB25YBkzMdOr1yv8qykhUe2IHGQEq9llD06LMDawZTaknQOPefig/sTqtZZ9eWdbkv8C+6MgZ7trcYSJOiV2vVKOUgqz6QcHRsB81GrbBTmCxztm9ay+H9j5exSqtGKYGzzBkb3cQbh0cZHEjpZb5sAxLu0MuczRsavH10D1uHmxrRekBpAx1pMF5/YRcjrQbHTl/m8q0J5rq9XLtlM1gzWGPvjo289vyT7Nve0iDHQ0oL7PTPVV888ATPPrWZ67enGJ9u59ra0hAYXjfIltYQ9VqiLXcepV9syNxZU0/ZvW3DspzKuPeXqbjzq+ymOy/6kFoAXfCPngJHToEjp8CRU+DIKXDkFDhyChw5BY6cAkdOgSOnwJFT4MgpcOQUOHIKHDkFjpwCR06BI6fAkVPgyClw5BQ4cgocOQWOnAJHToEjp8CRq3S+aMs7V6VrzunFVBbYHW7Pwlx3iYkNmjVn3UBVa7A6VBb4xG+Bzy4YM92lzXrnDo81nDf3Zezd6IVP8LJalR7YgKkOfHXVuDZpJDmOAu7MGievG0+3VHchlWzBXYd2rz/tUZ59sBnMdg1Hv3K9kEqOoo3lC6Kwj6bTpMgpcOQUOHIKHDkFjpwCR06B42YB0Pz38eqkwBfAS0DZs2hb3qtJf/9vdUNZK3WM1IDzwLcp8A4wBgyV+QySQEgDFmzRWUQXvBYRMiOx/kSkAS9tJmEzMxwHcvy8daEcOGdwtuonIiIiIiIiIiIiIiIiIiIiIiLyP/MHPPY+JEnKo6AAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDYtMTdUMDA6MzI6MDQrMDI6MDA7cgMOAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA2LTE3VDAwOjMyOjA0KzAyOjAwSi+7sgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=');
+            background-position: center center;
+            background-size: 50px 50px;
+            height: 50px;
+            position: absolute;
+            width: 50px;
+        }
+        #ie_title_fix {
+            font-family: monospace;
+            font-size: 90px;
+            left: 0;
+            position: fixed;
+            top: 0;
+            z-index: 10000000000;
+            transition: all 500ms ease-in-out;
+        }
+        .finish #ie_title_fix {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            padding: 10px 50px;
+            background: #C30017;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+
+class IEFIX {
+
+    constructor() {
+      this.x = document.createElement("div");
+      this.x.innerHTML = '<div id="ie_boxes_fix"></div><div id="ie_title_fix"></div>';
+      document.getElementsByTagName("body")[0].appendChild(this.x);
+
+        this.e = document.getElementById("ie_boxes_fix");
+        this.h = document.getElementById("ie_title_fix");
+        this.b = [];
+        this.currentBoxes = 0;
+        this.maxBoxes = 100;
+        this.maxHeight = window.innerHeight;
+        this.maxWidth = window.innerWidth;
+        this.minScale = 0.5;
+        this.maxScale = 1.5;
+        this.maxTimeout = 30000;
+        this.h.innerHTML = "0";
+        this.wrongClicks = 0;
+        this.run();
+    }
+
+    run() {
+        this.e.addEventListener('click', (e) => {
+            if (this.currentBoxes !== this.maxBoxes) {
+            this.wrongClicks += 1;
+            this.h.innerText = (parseInt(this.h.innerText) - (this.wrongClicks * this.wrongClicks));
+            }
+        });
+
+        for (let i = 0; i < this.maxBoxes; i++) {
+            setTimeout(() => {
+                const
+                    scale = (Math.random() * (this.minScale - this.maxScale) + this.maxScale).toFixed(2),
+                    left = (Math.random() * (0 - this.maxWidth) + this.maxWidth).toFixed(2);
+                let newBox = document.createElement("div");
+                newBox.classList.add("ie_box");
+                newBox.style.transform = `scale(${scale})`;
+                newBox.style.left = `${left}px`;
+                newBox.style.top = `0px`;
+                let boxInterval = setInterval(() => {
+                  newBox.style.top = (parseInt(newBox.style.top.replace("px","")) + 1) + "px";
+                  if (parseInt(newBox.style.top.replace("px","")) > this.maxHeight) {
+                    newBox.remove();
+                    this.currentBoxes = this.currentBoxes + 1;
+                    if (this.currentBoxes === this.maxBoxes) this.finish();
+                    clearInterval(boxInterval);
+                  }
+                }, 10/scale);
+                newBox.addEventListener('click', (e) => {
+                   e.stopPropagation();
+                   this.h.innerText = (parseInt(this.h.innerText) + (100/scale)).toFixed(0);
+                   clearInterval(boxInterval);
+                   e.target.remove();
+                   this.currentBoxes = this.currentBoxes + 1;
+                   if (this.currentBoxes === this.maxBoxes) this.finish();
+                });
+                this.e.appendChild(newBox);
+
+            }, (Math.random() * (0 - this.maxTimeout) + this.maxTimeout));
+        }
+    }
+
+    finish() {
+        this.x.classList.add("finish");
+        setTimeout(() => {
+            this.x.remove();
+        }, 10000);
+    }
+
+}
+
+let fixify = new IEFIX();
+
+</script>
+
+
+</body>
+</html>
